@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		600E2949153E9CDF000ED18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E2948153E9CDF000ED18E /* UIKit.framework */; };
+		600E294B153E9CDF000ED18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294A153E9CDF000ED18E /* Foundation.framework */; };
+		600E294D153E9CDF000ED18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294C153E9CDF000ED18E /* CoreGraphics.framework */; };
+		600E294F153E9CDF000ED18E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294E153E9CDF000ED18E /* CoreData.framework */; };
+		600E2955153E9CDF000ED18E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600E2953153E9CDF000ED18E /* InfoPlist.strings */; };
+		600E2957153E9CDF000ED18E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E2956153E9CDF000ED18E /* main.m */; };
+		600E295B153E9CDF000ED18E /* GRFXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E295A153E9CDF000ED18E /* GRFXAppDelegate.m */; };
+		600E295E153E9CDF000ED18E /* Tili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 600E295C153E9CDF000ED18E /* Tili.xcdatamodeld */; };
+		600E2966153E9CDF000ED18E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E2965153E9CDF000ED18E /* SenTestingKit.framework */; };
+		600E2967153E9CDF000ED18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E2948153E9CDF000ED18E /* UIKit.framework */; };
+		600E2968153E9CDF000ED18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294A153E9CDF000ED18E /* Foundation.framework */; };
+		600E2969153E9CDF000ED18E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294E153E9CDF000ED18E /* CoreData.framework */; };
+		600E2971153E9CDF000ED18E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600E296F153E9CDF000ED18E /* InfoPlist.strings */; };
+		600E2974153E9CDF000ED18E /* TiliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E2973153E9CDF000ED18E /* TiliTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		600E296A153E9CDF000ED18E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600E293B153E9CDF000ED18E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600E2943153E9CDF000ED18E;
+			remoteInfo = Tili;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		600E2944153E9CDF000ED18E /* Tili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		600E2948153E9CDF000ED18E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		600E294A153E9CDF000ED18E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		600E294C153E9CDF000ED18E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		600E294E153E9CDF000ED18E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		600E2952153E9CDF000ED18E /* Tili-Info.plist */ = {isa = PBXFileReference; path = "Tili-Info.plist"; sourceTree = "<group>"; };
+		600E2954153E9CDF000ED18E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600E2956153E9CDF000ED18E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		600E2958153E9CDF000ED18E /* Tili-Prefix.pch */ = {isa = PBXFileReference; path = "Tili-Prefix.pch"; sourceTree = "<group>"; };
+		600E2959153E9CDF000ED18E /* GRFXAppDelegate.h */ = {isa = PBXFileReference; path = GRFXAppDelegate.h; sourceTree = "<group>"; };
+		600E295A153E9CDF000ED18E /* GRFXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRFXAppDelegate.m; sourceTree = "<group>"; };
+		600E295D153E9CDF000ED18E /* Tili.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tili.xcdatamodel; sourceTree = "<group>"; };
+		600E2964153E9CDF000ED18E /* TiliTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiliTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		600E2965153E9CDF000ED18E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		600E296E153E9CDF000ED18E /* TiliTests-Info.plist */ = {isa = PBXFileReference; path = "TiliTests-Info.plist"; sourceTree = "<group>"; };
+		600E2970153E9CDF000ED18E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600E2972153E9CDF000ED18E /* TiliTests.h */ = {isa = PBXFileReference; path = TiliTests.h; sourceTree = "<group>"; };
+		600E2973153E9CDF000ED18E /* TiliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TiliTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		600E2941153E9CDF000ED18E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2949153E9CDF000ED18E /* UIKit.framework in Frameworks */,
+				600E294B153E9CDF000ED18E /* Foundation.framework in Frameworks */,
+				600E294D153E9CDF000ED18E /* CoreGraphics.framework in Frameworks */,
+				600E294F153E9CDF000ED18E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600E2960153E9CDF000ED18E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2966153E9CDF000ED18E /* SenTestingKit.framework in Frameworks */,
+				600E2967153E9CDF000ED18E /* UIKit.framework in Frameworks */,
+				600E2968153E9CDF000ED18E /* Foundation.framework in Frameworks */,
+				600E2969153E9CDF000ED18E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		600E2939153E9CDE000ED18E = {
+			isa = PBXGroup;
+			children = (
+				600E2950153E9CDF000ED18E /* Tili */,
+				600E296C153E9CDF000ED18E /* TiliTests */,
+				600E2947153E9CDF000ED18E /* Frameworks */,
+				600E2945153E9CDF000ED18E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		600E2945153E9CDF000ED18E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				600E2944153E9CDF000ED18E /* Tili.app */,
+				600E2964153E9CDF000ED18E /* TiliTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		600E2947153E9CDF000ED18E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				600E2948153E9CDF000ED18E /* UIKit.framework */,
+				600E294A153E9CDF000ED18E /* Foundation.framework */,
+				600E294C153E9CDF000ED18E /* CoreGraphics.framework */,
+				600E294E153E9CDF000ED18E /* CoreData.framework */,
+				600E2965153E9CDF000ED18E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		600E2950153E9CDF000ED18E /* Tili */ = {
+			isa = PBXGroup;
+			children = (
+				600E2959153E9CDF000ED18E /* GRFXAppDelegate.h */,
+				600E295A153E9CDF000ED18E /* GRFXAppDelegate.m */,
+				600E295C153E9CDF000ED18E /* Tili.xcdatamodeld */,
+				600E2951153E9CDF000ED18E /* Supporting Files */,
+			);
+			path = Tili;
+			sourceTree = "<group>";
+		};
+		600E2951153E9CDF000ED18E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				600E2952153E9CDF000ED18E /* Tili-Info.plist */,
+				600E2953153E9CDF000ED18E /* InfoPlist.strings */,
+				600E2956153E9CDF000ED18E /* main.m */,
+				600E2958153E9CDF000ED18E /* Tili-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		600E296C153E9CDF000ED18E /* TiliTests */ = {
+			isa = PBXGroup;
+			children = (
+				600E2972153E9CDF000ED18E /* TiliTests.h */,
+				600E2973153E9CDF000ED18E /* TiliTests.m */,
+				600E296D153E9CDF000ED18E /* Supporting Files */,
+			);
+			path = TiliTests;
+			sourceTree = "<group>";
+		};
+		600E296D153E9CDF000ED18E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				600E296E153E9CDF000ED18E /* TiliTests-Info.plist */,
+				600E296F153E9CDF000ED18E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		600E2943153E9CDF000ED18E /* Tili */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600E2977153E9CDF000ED18E /* Build configuration list for PBXNativeTarget "Tili" */;
+			buildPhases = (
+				600E2940153E9CDF000ED18E /* Sources */,
+				600E2941153E9CDF000ED18E /* Frameworks */,
+				600E2942153E9CDF000ED18E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tili;
+			productName = Tili;
+			productReference = 600E2944153E9CDF000ED18E /* Tili.app */;
+			productType = "com.apple.product-type.application";
+		};
+		600E2963153E9CDF000ED18E /* TiliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600E297A153E9CDF000ED18E /* Build configuration list for PBXNativeTarget "TiliTests" */;
+			buildPhases = (
+				600E295F153E9CDF000ED18E /* Sources */,
+				600E2960153E9CDF000ED18E /* Frameworks */,
+				600E2961153E9CDF000ED18E /* Resources */,
+				600E2962153E9CDF000ED18E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				600E296B153E9CDF000ED18E /* PBXTargetDependency */,
+			);
+			name = TiliTests;
+			productName = TiliTests;
+			productReference = 600E2964153E9CDF000ED18E /* TiliTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		600E293B153E9CDF000ED18E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = none;
+			};
+			buildConfigurationList = 600E293E153E9CDF000ED18E /* Build configuration list for PBXProject "Tili" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 600E2939153E9CDE000ED18E;
+			productRefGroup = 600E2945153E9CDF000ED18E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				600E2943153E9CDF000ED18E /* Tili */,
+				600E2963153E9CDF000ED18E /* TiliTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		600E2942153E9CDF000ED18E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2955153E9CDF000ED18E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600E2961153E9CDF000ED18E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2971153E9CDF000ED18E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		600E2962153E9CDF000ED18E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		600E2940153E9CDF000ED18E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2957153E9CDF000ED18E /* main.m in Sources */,
+				600E295B153E9CDF000ED18E /* GRFXAppDelegate.m in Sources */,
+				600E295E153E9CDF000ED18E /* Tili.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600E295F153E9CDF000ED18E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600E2974153E9CDF000ED18E /* TiliTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		600E296B153E9CDF000ED18E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600E2943153E9CDF000ED18E /* Tili */;
+			targetProxy = 600E296A153E9CDF000ED18E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		600E2953153E9CDF000ED18E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				600E2954153E9CDF000ED18E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		600E296F153E9CDF000ED18E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				600E2970153E9CDF000ED18E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		600E2975153E9CDF000ED18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		600E2976153E9CDF000ED18E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		600E2978153E9CDF000ED18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				INFOPLIST_FILE = "Tili/Tili-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		600E2979153E9CDF000ED18E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				INFOPLIST_FILE = "Tili/Tili-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		600E297B153E9CDF000ED18E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tili.app/Tili";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				INFOPLIST_FILE = "TiliTests/TiliTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		600E297C153E9CDF000ED18E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tili.app/Tili";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				INFOPLIST_FILE = "TiliTests/TiliTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		600E293E153E9CDF000ED18E /* Build configuration list for PBXProject "Tili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600E2975153E9CDF000ED18E /* Debug */,
+				600E2976153E9CDF000ED18E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600E2977153E9CDF000ED18E /* Build configuration list for PBXNativeTarget "Tili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600E2978153E9CDF000ED18E /* Debug */,
+				600E2979153E9CDF000ED18E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		600E297A153E9CDF000ED18E /* Build configuration list for PBXNativeTarget "TiliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600E297B153E9CDF000ED18E /* Debug */,
+				600E297C153E9CDF000ED18E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		600E295C153E9CDF000ED18E /* Tili.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				600E295D153E9CDF000ED18E /* Tili.xcdatamodel */,
+			);
+			currentVersion = 600E295D153E9CDF000ED18E /* Tili.xcdatamodel */;
+			path = Tili.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 600E293B153E9CDF000ED18E /* Project object */;
+}
