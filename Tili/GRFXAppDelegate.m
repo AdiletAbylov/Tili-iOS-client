@@ -7,6 +7,7 @@
 //
 
 #import "GRFXAppDelegate.h"
+#import "RootController.h"
 
 @implementation GRFXAppDelegate
 
@@ -19,6 +20,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.rootViewController = [[RootController alloc] initWithNibName:@"RootController" bundle:nil];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
