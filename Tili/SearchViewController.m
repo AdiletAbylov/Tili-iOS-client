@@ -11,6 +11,7 @@
 
 @implementation SearchViewController
 @synthesize searchField;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -69,10 +70,28 @@
 
 - (IBAction)startSearch:(id)sender 
 {
+    [self search];
+}
+- (void) search
+{
     if(searchField.text.length > 0)
     {
         ResultsListViewController *view = [[ResultsListViewController alloc] initWithNibName:@"ResultsListViewController" bundle:nil word:searchField.text];
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Поиск" style:UIBarButtonItemStylePlain target:nil action:nil];
+        [self.navigationItem setBackBarButtonItem:backButton];
         [ self.navigationController pushViewController:view animated:YES];
+        [self.searchField setText:@""];
     }
 }
+
+- (IBAction)didSearch:(id)sender {
+    [self search];
+}
+
+- (IBAction)gotoSite:(id)sender 
+{
+    NSString *url = @"http://tili.kg";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
 @end

@@ -13,6 +13,9 @@
 - (IBAction)clickY:(id)sender;
 - (IBAction)clickN:(id)sender;
 - (IBAction)startSearch:(id)sender;
+- (IBAction)gotoSite:(id)sender;
+-(void) search;
+- (IBAction)didSearch:(id)sender;
 
 @property (unsafe_unretained, nonatomic) IBOutlet UITextField *searchField;
 @end

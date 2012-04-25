@@ -38,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self makeRequest];
+    [self makeRequest];    
 }
 
 - (void) makeRequest
@@ -100,11 +100,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]; 
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    
     // Configure the cell.
     NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
     NSString *keyword = [item objectForKey:@"keyword"];
     NSString *description = [item objectForKey:@"value"];
-    
     cell.textLabel.text = keyword;
     cell.detailTextLabel.numberOfLines = 3;
     [cell.detailTextLabel setText:description];
@@ -118,15 +118,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
-     NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
+    NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
     ResultViewController *resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil data: item];
+    NSString *title = [item objectForKey:@"keyword"];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationItem setBackBarButtonItem:backButton];
     [self.navigationController pushViewController:resultViewController animated:YES];
 }
 
@@ -134,9 +130,8 @@
 {
     [self setResultArray:nil];
     [self setResponseData:nil];
+    [self set_wordToSearch:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
