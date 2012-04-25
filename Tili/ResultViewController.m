@@ -1,20 +1,22 @@
 //
-//  TestViewController.m
+//  ResultViewController.m
 //  Tili
 //
-//  Created by Adilet Abylov on 19.04.12.
+//  Created by Adilet Abylov on 24.04.12.
 //  Copyright (c) 2012 none. All rights reserved.
 //
 
-#import "TestViewController.h"
+#import "ResultViewController.h"
 
-@implementation TestViewController
+@implementation ResultViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+@synthesize descriptionTextView;
+@synthesize translationData;
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil data:(NSDictionary *)data
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        translationData = data;
     }
     return self;
 }
@@ -32,11 +34,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSString *dictname = [[translationData objectForKey:@"dictname"] stringByAppendingString:@"\n"];
+    descriptionTextView.text =  [dictname stringByAppendingString:[translationData objectForKey:@"value"]];
 }
 
 - (void)viewDidUnload
 {
+    [self setDescriptionTextView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,6 +52,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)clickButton:(id)sender {
-}
 @end

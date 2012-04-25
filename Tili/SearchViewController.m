@@ -7,6 +7,7 @@
 //
 
 #import "SearchViewController.h"
+#import "ResultsListViewController.h"
 
 @implementation SearchViewController
 @synthesize searchField;
@@ -70,8 +71,8 @@
 {
     if(searchField.text.length > 0)
     {
-        //
-        // do search
+        ResultsListViewController *view = [[ResultsListViewController alloc] initWithNibName:@"ResultsListViewController" bundle:nil word:searchField.text];
+        [ self.navigationController pushViewController:view animated:YES];
     }
 }
 @end
