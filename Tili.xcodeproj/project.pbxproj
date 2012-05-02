@@ -29,6 +29,8 @@
 		605169C61546BE82002E3789 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605169C41546BE82002E3789 /* ResultViewController.xib */; };
 		60978F5C153FD63E003D789B /* ResultsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60978F5A153FD63E003D789B /* ResultsListViewController.m */; };
 		60978F5D153FD63E003D789B /* ResultsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60978F5B153FD63E003D789B /* ResultsListViewController.xib */; };
+		60C782B3155102360032B4CF /* tili_iOS_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C782B2155102360032B4CF /* tili_iOS_57.png */; };
+		60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C782B51551023B0032B4CF /* tili_iOS_114.png */; };
 		60E6E6671540208500B9E8AE /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6521540208500B9E8AE /* CDataScanner.m */; };
 		60E6E6681540208500B9E8AE /* CFilteringJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6551540208500B9E8AE /* CFilteringJSONSerializer.m */; };
 		60E6E6691540208500B9E8AE /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6571540208500B9E8AE /* CJSONSerialization.m */; };
@@ -83,6 +85,8 @@
 		60978F59153FD63E003D789B /* ResultsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsListViewController.h; sourceTree = "<group>"; };
 		60978F5A153FD63E003D789B /* ResultsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsListViewController.m; sourceTree = "<group>"; };
 		60978F5B153FD63E003D789B /* ResultsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsListViewController.xib; sourceTree = "<group>"; };
+		60C782B2155102360032B4CF /* tili_iOS_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tili_iOS_57.png; sourceTree = "<group>"; };
+		60C782B51551023B0032B4CF /* tili_iOS_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tili_iOS_114.png; sourceTree = "<group>"; };
 		60E6E6511540208500B9E8AE /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		60E6E6521540208500B9E8AE /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
 		60E6E6541540208500B9E8AE /* CFilteringJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFilteringJSONSerializer.h; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		600E2939153E9CDE000ED18E = {
 			isa = PBXGroup;
 			children = (
+				60C782B51551023B0032B4CF /* tili_iOS_114.png */,
+				60C782B2155102360032B4CF /* tili_iOS_57.png */,
 				600E2950153E9CDF000ED18E /* Tili */,
 				600E296C153E9CDF000ED18E /* TiliTests */,
 				600E2947153E9CDF000ED18E /* Frameworks */,
@@ -349,6 +355,8 @@
 				600E2986153E9EE3000ED18E /* SearchViewController.xib in Resources */,
 				60978F5D153FD63E003D789B /* ResultsListViewController.xib in Resources */,
 				605169C61546BE82002E3789 /* ResultViewController.xib in Resources */,
+				60C782B3155102360032B4CF /* tili_iOS_57.png in Resources */,
+				60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +501,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -505,7 +513,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
