@@ -22,6 +22,7 @@
     {
         self._wordToSearch = wordToSearch;
     }
+    self.navigationItem.title = @"Результаты поиска";
     return self;
 }
 
@@ -56,13 +57,29 @@
 {
     NSError *theError = nil; 
     resultArray = [[CJSONDeserializer deserializer] deserializeAsArray:responseData error:&theError]; 
+    if(theError != nil)
+    {
+        [self showAlert:@"Ошибка" withText:@"Ошибка обработки данных"];
+
+    }
 }
+
+- (void) showAlert:(NSString *)title withText:(NSString *)text
+{
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:title
+                                                      message:text
+                                                     delegate:nil
+                                            cancelButtonTitle:@"OK"
+                                            otherButtonTitles:nil];
+    [message show];
+}
+
+
 //
 // Connection delegate methods
 //
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response 
 {
-    
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data 
@@ -72,7 +89,7 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error 
 {
-    
+    [self showAlert:@"Ошибка подключения" withText:@"При получении данных с сервера произошла ошибка"];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection 
@@ -120,7 +137,7 @@
 {
     NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
     ResultViewController *resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil data: item];
-    NSString *title = [item objectForKey:@"keyword"];
+    NSString *title = @"Результаты";
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
     [self.navigationItem setBackBarButtonItem:backButton];
     [self.navigationController pushViewController:resultViewController animated:YES];

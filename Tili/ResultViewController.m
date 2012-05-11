@@ -18,6 +18,7 @@
     if (self) {
         translationData = data;
     }
+    self.navigationItem.title = [translationData objectForKey:@"keyword"];
     return self;
 }
 

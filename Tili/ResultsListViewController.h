@@ -14,6 +14,8 @@
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil word:(NSString *)wordToSearch;
 -(void) makeRequest;
 -(void) parseData;
+-(void) showAlert:(NSString *)title withText:(NSString *)text;
+
 @property (unsafe_unretained, atomic) NSString *_wordToSearch;
 @property (retain, nonatomic) NSMutableData *responseData;
 @property (retain, nonatomic) NSArray *resultArray;
