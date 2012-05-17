@@ -49,7 +49,7 @@
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     responseData = [[NSMutableData alloc] initWithLength:0];
-   
+    
     NSURLConnection *conn =[[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -60,7 +60,12 @@
     if(theError != nil)
     {
         [self showAlert:@"Ошибка" withText:@"Ошибка обработки данных"];
-
+        
+    }
+    if([resultArray count] == 0)
+    {
+        NSDictionary *item = [[NSDictionary alloc] initWithObjectsAndKeys:@"Слово отсутствует в словарях",@"value", nil];
+        resultArray = [[NSArray alloc] initWithObjects:item, nil];
     }
 }
 
@@ -111,20 +116,23 @@
 { 
     static NSString *CellIdentifier = @"Cell"; 
     
+    NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
+    NSString *keyword = [item objectForKey:@"keyword"];
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; 
     if (cell == nil) 
     { 
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]; 
     }
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
-    // Configure the cell.
-    NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
-    NSString *keyword = [item objectForKey:@"keyword"];
+    if(keyword != NULL)
+    {
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.detailTextLabel.numberOfLines = 3;
+    }
     NSString *description = [item objectForKey:@"value"];
     cell.textLabel.text = keyword;
-    cell.detailTextLabel.numberOfLines = 3;
     [cell.detailTextLabel setText:description];
+    
     return cell; 
 }
 
@@ -136,11 +144,15 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSMutableDictionary *item = [resultArray objectAtIndex:indexPath.row];
-    ResultViewController *resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil data: item];
-    NSString *title = @"Результаты";
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
-    [self.navigationItem setBackBarButtonItem:backButton];
-    [self.navigationController pushViewController:resultViewController animated:YES];
+    NSString *keyword = [item objectForKey:@"keyword"];
+    if(keyword != NULL)
+    {
+        ResultViewController *resultViewController = [[ResultViewController alloc] initWithNibName:@"ResultViewController" bundle:nil data: item];
+        NSString *title = @"Результаты";
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
+        [self.navigationItem setBackBarButtonItem:backButton];
+        [self.navigationController pushViewController:resultViewController animated:YES];
+    }
 }
 
 - (void)viewDidUnload
