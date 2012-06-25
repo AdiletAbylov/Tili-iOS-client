@@ -49,7 +49,9 @@
     url = [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     responseData = [[NSMutableData alloc] initWithLength:0];
-    
+   
+    UIApplication *app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = true;
     NSURLConnection *conn =[[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
@@ -94,6 +96,9 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error 
 {
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = true;
     [self showAlert:@"Ошибка подключения" withText:@"При получении данных с сервера произошла ошибка"];
 }
 
@@ -101,6 +106,9 @@
 {
     [self parseData];
     [self.tableView reloadData];
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    app.networkActivityIndicatorVisible = false;
 }
 //
 // ------------ TABLE VIEW----------------------//
