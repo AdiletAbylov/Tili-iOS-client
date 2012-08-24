@@ -39,6 +39,8 @@
 		60E6E66D1540208500B9E8AE /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6611540208500B9E8AE /* CJSONDeserializer.m */; };
 		60E6E66E1540208500B9E8AE /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6631540208500B9E8AE /* CJSONScanner.m */; };
 		60E6E66F1540208500B9E8AE /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6651540208500B9E8AE /* CJSONSerializer.m */; };
+		EEFE583C15E7F19600C42825 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFE583B15E7F19600C42825 /* icon72.png */; };
+		EEFE583E15E7F19C00C42825 /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFE583D15E7F19C00C42825 /* icon144.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		60E6E6641540208500B9E8AE /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		60E6E6651540208500B9E8AE /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		60E6E6661540208500B9E8AE /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		EEFE583B15E7F19600C42825 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
+		EEFE583D15E7F19C00C42825 /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		600E2939153E9CDE000ED18E = {
 			isa = PBXGroup;
 			children = (
+				EEFE583D15E7F19C00C42825 /* icon144.png */,
+				EEFE583B15E7F19600C42825 /* icon72.png */,
 				60C782B51551023B0032B4CF /* tili_iOS_114.png */,
 				60C782B2155102360032B4CF /* tili_iOS_57.png */,
 				600E2950153E9CDF000ED18E /* Tili */,
@@ -355,6 +361,8 @@
 				605169C61546BE82002E3789 /* ResultViewController.xib in Resources */,
 				60C782B3155102360032B4CF /* tili_iOS_57.png in Resources */,
 				60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */,
+				EEFE583C15E7F19600C42825 /* icon72.png in Resources */,
+				EEFE583E15E7F19C00C42825 /* icon144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

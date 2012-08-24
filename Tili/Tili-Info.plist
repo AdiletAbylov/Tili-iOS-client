@@ -12,6 +12,8 @@
 	<array>
 		<string>tili_iOS_57.png</string>
 		<string>tili_iOS_114.png</string>
+		<string>icon72.png</string>
+		<string>icon144.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -21,6 +23,8 @@
 			<array>
 				<string>tili_iOS_57.png</string>
 				<string>tili_iOS_114.png</string>
+				<string>icon72.png</string>
+				<string>icon144.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>
