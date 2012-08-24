@@ -509,6 +509,7 @@
 					armv6,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kalys Osmonov (6R5J7D443F)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -529,6 +530,7 @@
 					armv6,
 				);
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Kalys Osmonov";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
