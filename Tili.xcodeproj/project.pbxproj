@@ -11,7 +11,6 @@
 		600E294B153E9CDF000ED18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294A153E9CDF000ED18E /* Foundation.framework */; };
 		600E294D153E9CDF000ED18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294C153E9CDF000ED18E /* CoreGraphics.framework */; };
 		600E294F153E9CDF000ED18E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600E294E153E9CDF000ED18E /* CoreData.framework */; };
-		600E2955153E9CDF000ED18E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 600E2953153E9CDF000ED18E /* InfoPlist.strings */; };
 		600E2957153E9CDF000ED18E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E2956153E9CDF000ED18E /* main.m */; };
 		600E295B153E9CDF000ED18E /* GRFXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E295A153E9CDF000ED18E /* GRFXAppDelegate.m */; };
 		600E295E153E9CDF000ED18E /* Tili.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 600E295C153E9CDF000ED18E /* Tili.xcdatamodeld */; };
@@ -40,6 +39,8 @@
 		60E6E66D1540208500B9E8AE /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6611540208500B9E8AE /* CJSONDeserializer.m */; };
 		60E6E66E1540208500B9E8AE /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6631540208500B9E8AE /* CJSONScanner.m */; };
 		60E6E66F1540208500B9E8AE /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6651540208500B9E8AE /* CJSONSerializer.m */; };
+		EEFE583C15E7F19600C42825 /* icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFE583B15E7F19600C42825 /* icon72.png */; };
+		EEFE583E15E7F19C00C42825 /* icon144.png in Resources */ = {isa = PBXBuildFile; fileRef = EEFE583D15E7F19C00C42825 /* icon144.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,8 @@
 		60E6E6641540208500B9E8AE /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
 		60E6E6651540208500B9E8AE /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
 		60E6E6661540208500B9E8AE /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		EEFE583B15E7F19600C42825 /* icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72.png; sourceTree = "<group>"; };
+		EEFE583D15E7F19C00C42825 /* icon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon144.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 		600E2939153E9CDE000ED18E = {
 			isa = PBXGroup;
 			children = (
+				EEFE583D15E7F19C00C42825 /* icon144.png */,
+				EEFE583B15E7F19600C42825 /* icon72.png */,
 				60C782B51551023B0032B4CF /* tili_iOS_114.png */,
 				60C782B2155102360032B4CF /* tili_iOS_57.png */,
 				600E2950153E9CDF000ED18E /* Tili */,
@@ -324,7 +329,7 @@
 		600E293B153E9CDF000ED18E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = none;
 			};
 			buildConfigurationList = 600E293E153E9CDF000ED18E /* Build configuration list for PBXProject "Tili" */;
@@ -350,13 +355,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				600E2955153E9CDF000ED18E /* InfoPlist.strings in Resources */,
 				600E2981153E9D5A000ED18E /* RootController.xib in Resources */,
 				600E2986153E9EE3000ED18E /* SearchViewController.xib in Resources */,
 				60978F5D153FD63E003D789B /* ResultsListViewController.xib in Resources */,
 				605169C61546BE82002E3789 /* ResultViewController.xib in Resources */,
 				60C782B3155102360032B4CF /* tili_iOS_57.png in Resources */,
 				60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */,
+				EEFE583C15E7F19600C42825 /* icon72.png in Resources */,
+				EEFE583E15E7F19C00C42825 /* icon144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +476,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -488,7 +494,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -498,11 +504,19 @@
 		600E2978153E9CDF000ED18E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kalys Osmonov (6R5J7D443F)";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E962C2FC-524A-486D-992D-18AF6B869E6A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -511,11 +525,19 @@
 		600E2979153E9CDF000ED18E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kalys Osmonov";
+				COMPRESS_PNG_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "A02174E5-7F90-4652-BCA1-C82410AF348A";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
