@@ -98,7 +98,7 @@
 {
     
     UIApplication *app = [UIApplication sharedApplication];
-    app.networkActivityIndicatorVisible = true;
+    app.networkActivityIndicatorVisible = false;
     [self showAlert:@"Ошибка подключения" withText:@"При получении данных с сервера произошла ошибка"];
 }
 
