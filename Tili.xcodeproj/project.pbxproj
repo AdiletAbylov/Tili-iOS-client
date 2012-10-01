@@ -28,6 +28,7 @@
 		605169C61546BE82002E3789 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 605169C41546BE82002E3789 /* ResultViewController.xib */; };
 		60978F5C153FD63E003D789B /* ResultsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60978F5A153FD63E003D789B /* ResultsListViewController.m */; };
 		60978F5D153FD63E003D789B /* ResultsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60978F5B153FD63E003D789B /* ResultsListViewController.xib */; };
+		60AC84F916197A70004E2BE8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AC84F816197A70004E2BE8 /* Default-568h@2x.png */; };
 		60C782B3155102360032B4CF /* tili_iOS_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C782B2155102360032B4CF /* tili_iOS_57.png */; };
 		60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C782B51551023B0032B4CF /* tili_iOS_114.png */; };
 		60E6E6671540208500B9E8AE /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E6E6521540208500B9E8AE /* CDataScanner.m */; };
@@ -86,6 +87,7 @@
 		60978F59153FD63E003D789B /* ResultsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsListViewController.h; sourceTree = "<group>"; };
 		60978F5A153FD63E003D789B /* ResultsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsListViewController.m; sourceTree = "<group>"; };
 		60978F5B153FD63E003D789B /* ResultsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsListViewController.xib; sourceTree = "<group>"; };
+		60AC84F816197A70004E2BE8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		60C782B2155102360032B4CF /* tili_iOS_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tili_iOS_57.png; sourceTree = "<group>"; };
 		60C782B51551023B0032B4CF /* tili_iOS_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tili_iOS_114.png; sourceTree = "<group>"; };
 		60E6E6511540208500B9E8AE /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		600E2939153E9CDE000ED18E = {
 			isa = PBXGroup;
 			children = (
+				60AC84F816197A70004E2BE8 /* Default-568h@2x.png */,
 				EEFE583D15E7F19C00C42825 /* icon144.png */,
 				EEFE583B15E7F19600C42825 /* icon72.png */,
 				60C782B51551023B0032B4CF /* tili_iOS_114.png */,
@@ -329,7 +332,7 @@
 		600E293B153E9CDF000ED18E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = none;
 			};
 			buildConfigurationList = 600E293E153E9CDF000ED18E /* Build configuration list for PBXProject "Tili" */;
@@ -363,6 +366,7 @@
 				60C782B61551023B0032B4CF /* tili_iOS_114.png in Resources */,
 				EEFE583C15E7F19600C42825 /* icon72.png in Resources */,
 				EEFE583E15E7F19C00C42825 /* icon144.png in Resources */,
+				60AC84F916197A70004E2BE8 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +480,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -494,7 +498,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -514,7 +518,7 @@
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E962C2FC-524A-486D-992D-18AF6B869E6A";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -535,7 +539,7 @@
 				GCC_PREFIX_HEADER = "Tili/Tili-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "Tili/Tili-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "A02174E5-7F90-4652-BCA1-C82410AF348A";
 				TARGETED_DEVICE_FAMILY = "1,2";
